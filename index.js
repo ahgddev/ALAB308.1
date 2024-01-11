@@ -97,6 +97,9 @@ let trip_mph = distance/car_mph;
 final_travel_price = gallon_price * trip_mph;
 is_trip_in_budget = trip_budget >= final_trip_price
 console.log("At " + car_speed + "mph, your trip will take " + trip_time + " hours, require " + trip_mph + " gallons of gas and it's " + is_trip_in_budget + " that you can afford this trip.")
-}
 
+if (is_trip_in_budget == false) {
+    console.log("Would you like to reduce or increase your budget?")
+}
+}
 trip_checker(75,1500,3,23,175)
