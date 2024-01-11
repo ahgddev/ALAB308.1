@@ -85,3 +85,18 @@ miles_per_gallon = 1500/23;
 final_trip_price = price_per_gallon * miles_per_gallon;
 can_afford = budget >= final_trip_price
 console.log("At " + car_speed + "mph, your trip will take " + hours + " hours, require " + miles_per_gallon + " gallons of gas and it's " + can_afford + " that you can afford this trip.")
+
+//Refactoring the trip calculator activity utilizing a function
+
+function trip_checker(speed, distance, gallon_price, car_mph, trip_budget){
+let final_travel_price = 0;
+let can_afford = false;
+
+let trip_time = distance/speed;
+let trip_mph = distance/car_mph;
+final_travel_price = gallon_price * trip_mph;
+is_trip_in_budget = trip_budget >= final_trip_price
+console.log("At " + car_speed + "mph, your trip will take " + trip_time + " hours, require " + trip_mph + " gallons of gas and it's " + is_trip_in_budget + " that you can afford this trip.")
+}
+
+trip_checker(75,1500,3,23,175)
