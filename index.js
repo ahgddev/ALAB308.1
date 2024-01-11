@@ -49,3 +49,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
   //Check if the first number is larger than the last. Cache the result in a variable.
   const is_n1_larger_than_n4 = n1 > n4
+
+//   Accomplish the following arithmetic chain:
+// Subtract the first number from the second number.
+// Multiply the result by the third number.
+// Find the remainder of dividing the result by the fourth number.
+
+const math_chain = ((n1-n2) * n3)/n4
