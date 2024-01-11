@@ -57,3 +57,31 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 const math_chain = ((n1-n2) * n3)/n4;
 
+let car_speed = 0;
+let miles_per_gallon = 0;
+let final_trip_price = 0;
+let can_afford = false;
+const distance = 1500;
+const price_per_gallon = 3;
+const budget = 175;
+
+car_speed = 55;
+let hours = 1500/car_speed;
+miles_per_gallon = 1500/30;
+final_trip_price = price_per_gallon * miles_per_gallon;
+can_afford = budget >= final_trip_price
+console.log("At " + car_speed + "mph, your trip will take " + hours + " hours, require " + miles_per_gallon + " gallons of gas and it's " + can_afford + " that you can afford this trip.")
+
+car_speed = 65;
+hours = 1500/car_speed;
+miles_per_gallon = 1500/28;
+final_trip_price = price_per_gallon * miles_per_gallon;
+can_afford = budget >= final_trip_price
+console.log("At " + car_speed + "mph, your trip will take " + hours + " hours, require " + miles_per_gallon + " gallons of gas and it's " + can_afford + " that you can afford this trip.")
+
+car_speed = 75;
+hours = 1500/car_speed;
+miles_per_gallon = 1500/23;
+final_trip_price = price_per_gallon * miles_per_gallon;
+can_afford = budget >= final_trip_price
+console.log("At " + car_speed + "mph, your trip will take " + hours + " hours, require " + miles_per_gallon + " gallons of gas and it's " + can_afford + " that you can afford this trip.")
