@@ -43,3 +43,9 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+  // Check if all numbers are divisible by 5. Cache the result in a variable.
+  const divisible_by_five = Number.isInteger((n1 / 5) + (n2 / 5) + (n3 / 5) + (n4 / 5))
+
+  //Check if the first number is larger than the last. Cache the result in a variable.
+  const is_n1_larger_than_n4 = n1 > n4
